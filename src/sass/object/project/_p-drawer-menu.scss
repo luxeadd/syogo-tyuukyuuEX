@@ -1,0 +1,39 @@
+.p-drawer-menu {
+  position: fixed;
+  z-index: 4;
+  width: 100%;
+  max-width: rem(520);
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll;
+  background-color: #000;
+  color: #fff;
+  transform: translateX(520px);
+  transition: 0.3s;
+}
+
+.is-drawerActive {
+  .p-drawer-menu {
+    transform: translateX(0px);
+    transition: 0.3s;
+
+  }
+}
+
+.p-drawer-menu__items {
+
+}
+
+.p-drawer-menu__item {
+
+  
+}
+
+.p-drawer-menu__item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+
+}

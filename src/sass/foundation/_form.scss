@@ -3,8 +3,7 @@
 @charset "utf-8";
 
 fieldset,
-legend,
-button {
+legend {
 	margin: 0;
 	padding: 0;
 	border: none;
@@ -40,12 +39,12 @@ textarea,
 select {
 	margin-right: 0;
 	margin-left: 0;
-	padding: 4px;
-	border: 1px solid #ccc;
+	// padding: 4px;
+	// border: 1px solid red;
 	border-radius: 0;
-	outline: none;
-	background: none;
-	font-size: 16px;
+	// outline: none;
+	// background: none;
+	// font-size: 16px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -58,11 +57,11 @@ textarea {
 }
 
 select {
-	padding-right: 30px;
-	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALJJREFUeNrslssNgCAQRCmB0ijBEuyEEijBEijBEizBEnAPy0UBWVj8JDvJJB5w3gsXVUoikXwsBrpAPdRCNcOmxi2P2yZ3cIKGU9dOCY0b590pdXhPHOyRyMEDsi4JhVIlSvBYTRGgSNTAQ+pFyyBRC7e5AdchUQt3d1fYIsEGb5Fgh1MktlFwisQwOIeE4/pGuDfhLRLscIrEMHiNxHB4SeIxeMyMPxkenyUSyT9zCDAAj5btZ4c3zaUAAAAASUVORK5CYII=");
-	background-repeat: no-repeat;
-	background-size: 12px 12px;
-	background-position: right 8px center;
+	// padding-right: 30px;
+	// background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALJJREFUeNrslssNgCAQRCmB0ijBEuyEEijBEijBEizBEnAPy0UBWVj8JDvJJB5w3gsXVUoikXwsBrpAPdRCNcOmxi2P2yZ3cIKGU9dOCY0b590pdXhPHOyRyMEDsi4JhVIlSvBYTRGgSNTAQ+pFyyBRC7e5AdchUQt3d1fYIsEGb5Fgh1MktlFwisQwOIeE4/pGuDfhLRLscIrEMHiNxHB4SeIxeMyMPxkenyUSyT9zCDAAj5btZ4c3zaUAAAAASUVORK5CYII=");
+	// background-repeat: no-repeat;
+	// background-size: 12px 12px;
+	// background-position: right 8px center;
 }
 
 .select {
@@ -134,20 +133,18 @@ legend {
 
 /* button */
 input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
+input[type="reset"] {
 	display: inline-block;
-	margin: 0;
-	padding: 10px 30px;
-	border: 1px solid #999;
+	// margin: 0;
+	// padding: 10px 30px;
+	// border: 1px solid #999;
 	border-radius: 0;
 	-webkit-box-sizing: content-box;
 	-webkit-appearance: button;
 	appearance: button;
-	background: #efefef;
-	color: #000;
-	font-size: 20px;
+	// background: #efefef;
+	// color: #000;
+	// font-size: 20px;
 	cursor: pointer;
 }
 
@@ -255,11 +252,9 @@ input[type="radio"]:checked + span::after {
 
 /* button */
 input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-button:hover {
-	border-color: #3498db;
-	background: #3498db;
+input[type="reset"]:hover{
+	border-color: $btn-color;
+	background: $btn-color;
 	color: #fff;
 }
 
@@ -270,7 +265,7 @@ textarea:focus {
 }
 input[type="submit"]:focus,
 input[type=reset]:focus,
-input[type="button"]:focus,
+// input[type="button"]:focus,
 input[type="search"]:focus {
 	outline-offset: -2px;
 }

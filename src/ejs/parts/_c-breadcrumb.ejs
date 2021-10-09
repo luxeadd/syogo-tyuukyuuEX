@@ -1,0 +1,21 @@
+<nav class="c-breadcrumb">
+  <ol class="c-breadcrumb__list">
+    <% for (var key in navigationList) { %>
+      <%
+      var path = navigationList[key].path;
+      var label = navigationList[key].label;
+      %>
+      <li class="c-breadcrumb__item">
+        <% if ( path === '' ) { %>
+          <span class="current">
+            <%= label %>
+          </span>
+          <% } else { %>
+            <a href="<%= path %>">
+              <%= label %>
+            </a>
+           <% } %>
+       </li>
+     <% } %>
+   </ol>
+  </nav><!-- /.breadcrumb -->

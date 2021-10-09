@@ -1,0 +1,97 @@
+.p-header {
+  height: rem(40);
+  background: transparent;
+  
+  @include mq(tab) {
+   height: rem(80);
+   
+ }
+ 
+}
+
+.p-header.change-color {
+  background: rgba($color: #fff, $alpha: 1.0);
+ }
+ 
+ .p-header__inner {
+   padding: 0 rem(20);
+   height: inherit;
+   display: flex;
+   align-items: center;
+   padding-left: rem(20);
+   padding-right: rem(20);
+ 
+   @include mq(tab) {
+   }
+ 
+ }
+ 
+ .p-header__logo {
+   width: rem(100);
+   height: inherit;
+   display: flex;
+   align-items: center;
+ 
+ 
+   @include mq(tab) {
+     width: rem(200);
+   
+   }
+
+ }
+ 
+ .p-header__logo img {
+   display: flex;
+   align-items: center;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .p-header__drawer {
+   position: absolute;
+   top: rem(8);
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 5;
+ 
+ 
+ }
+ 
+ .p-header__drawer-menu {
+   
+ 
+ }
+ 
+ .p-header__overlay {
+  position: fixed;
+  z-index: 3;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.is-drawerActive {
+  .p-header__overlay {
+    
+    visibility: visible;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+}
+ 
+ .p-header__pc-menu {
+   margin-left: rem(120);
+   height: inherit;
+ }
+
+ .p-header__btn {
+   display: inline-block;
+  margin-left: auto;
+ }

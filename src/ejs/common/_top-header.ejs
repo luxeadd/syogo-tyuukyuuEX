@@ -1,3 +1,47 @@
-<div class="l-top-header p-top-header">
-  これはヘッダーです
-</div>
+<header class="l-header p-header js-header">
+  <div class="p-header__inner">
+
+   <!-- ヘッダーロゴ -->
+    <div class="p-header__logo">
+			<a href="/">
+       <img  src="images/common/logo-w.svg" alt="タイトルロゴ">
+      </a>
+     </div><!-- /.header__logo -->
+
+		<!-- ドロワーアイコン  -->
+    <button type="button" id="js-hamburger" class="p-header__drawer c-hamburger" aria-controls="js-drawer-menu" aria-expanded="false" area-label="メニューを開閉する">
+       <span class="c-hamburger__line"></span>
+     </button>
+        
+    <!-- ドロワーメニュー -->
+     <div class=" p-header__drawer-menu  p-drawer-menu" id="js-drawer-menu" area-hidden="true">
+       <ul class="p-drawer-menu__items">
+         <li id="js-drawer-menu__item" class="p-drawer-menu__item  "><a href="">お部屋</a></li>
+          <li id="js-drawer-menu__item" class="p-drawer-menu__item"><a href="">お料理</a></li>
+          <li id="js-drawer-menu__item" class="p-drawer-menu__item"><a href="">温泉</a></li>
+        </ul>
+      </div><!-- /.sheader-menu -->
+  
+        <!-- pcーメニュー -->
+      <nav class="p-header__pc-menu p-header-menu ">
+        <ul class="p-header-menu__items">
+          <li class="p-header-menu__item"><a href="">お部屋</a></li><!-- /.pc-menu__item -->
+          <li class="p-header-menu__item"><a href="">お料理</a></li><!-- /.pc-menu__item -->
+          <li class="p-header-menu__item"><a href="">温泉</a></li><!-- /.pc-menu__item -->
+          
+        </ul><!-- /.pc-menu__items -->
+      </nav><!-- /.header__menu -->
+
+      <div id="js-reserve-btn" class="p-header__btn c-reserve-btn">
+        <div href="" class="c-reserve-btn__link">
+          <img src="images/common/calender.svg" alt="">
+          <p class="c-reserve-btn__text">宿泊予約</p>
+        </div><!-- /.c-reserve-btn__link -->
+      </div><!-- /.p-header__btn -->
+
+
+      <!-- ドロワーメニュー展開時背景 -->
+      <div class="p-header__overlay" id="js-header__overlay"></div>
+
+    </div><!-- /.header__inner -->
+   </header>

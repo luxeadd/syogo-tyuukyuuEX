@@ -1,0 +1,36 @@
+.c-reserve-btn {
+
+}
+
+
+.c-reserve-btn__link {
+  display: inline-block;
+  background: $btn-color;
+  display: flex;
+  justify-content: space-between;
+  padding: rem(5) rem(10);
+  
+  align-items: center;
+  @include mq(tab) {
+    padding: rem(16) rem(37);
+    
+  }
+}
+
+.c-reserve-btn__link img {
+  display: inline-block;
+  width: rem(22);
+  height: rem(22);
+  
+}
+
+.c-reserve-btn__text {
+  margin-left: rem(10);
+  color: #fff;
+ font-size: rem(14);
+  @include mq(tab) {
+    font-size: rem(16);
+    
+  }
+
+}

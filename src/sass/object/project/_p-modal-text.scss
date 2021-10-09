@@ -1,0 +1,25 @@
+.p-modal-text {
+  width: 100%;
+  }
+  
+  
+  .p-modal-text__text {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #E7E7E7;
+    border-radius: 0;
+    color: inherit;
+    font-family: inherit;
+    font-size: rem(14);
+    padding: rem(9) rem(10);
+    width: 100%;
+  }
+  
+  .p-modal-text__text:focus {
+    border: 1px solid #333;
+    box-shadow: none;
+    outline: none;
+  }

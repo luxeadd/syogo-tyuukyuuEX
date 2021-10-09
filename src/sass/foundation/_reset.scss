@@ -49,6 +49,13 @@ body {
 	z-index: -9999;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	font-weight: $font-weight-base;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -161,7 +168,8 @@ object {
 
 
 ul,
-ol {
+ol,
+li {
 	list-style: none;
 }
 

@@ -1,21 +1,24 @@
 // 色
 $background: #fff; // 背景
-$text-color: #333; // テキスト色
+$text-color: #000000; // テキスト色
+$btn-color: #978F10; // 予約ボタン色
 
 // マウスホバー
 $opacity: 0.7; // 透過度
 
 // フォント
-$font-family-base: "";// ベースフォント
+$font-family-base: “Times New Roman”, “游明朝”, “Yu Mincho”, “游明朝体”, “YuMincho”,
+“ヒラギノ明朝 Pro W3”, “Hiragino Mincho Pro”, “HiraMinProN-W3”, “HGS明朝E”,
+“ＭＳ Ｐ明朝”, “MS PMincho”, serif;
 $font-size-base: 16px; // ベースフォントサイズ
-$font-weight-base: 400; // ベースフォントウェイト
+$font-weight-base: 500; // ベースフォントウェイト
 $lh: 1.6; // ベース行間
 
 // ---
 // レイアウト
 // ---
 $l-tab: 768px; // タブレットサイズ
-$l-inner: 1000px; // インナー幅
+$l-inner: 1180px; // インナー幅
 $l-pc: 1440px; // パソコン幅
 
 // ブレークポイント（PC基準）
