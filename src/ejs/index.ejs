@@ -1,9 +1,286 @@
 <!DOCTYPE html>
 <html lang="ja">
-<%- include('./common/_head') %>
+<%- include('./common/_head',{param:'top',title:'石井花壇 | 温海温泉旅館【公式サイト】'}) %>
   <body>
-    <%- include('./common/_top-header') %>
-   
+    <%- include('./common/_top-header',{param:'top'}) %>
+
+    <%- include('./parts/_p-modal',{param:'top'}) %>
+
+    <div class="l-top-mv p-top-mv">
+      <div class="p-top-mv__img">
+        <img src="images/common/mainbg01.jpg" alt="">
+      </div><!-- /.p-top-mv__img -->  
+      <h2 class="p-top-mv_title">頑張る人の<br>頑張らない時間</h2><!-- /.p-top-mv_title -->
+    </div><!-- /.l-top-mv -->
+
+
+    <div class="l-top-message p-top-message">
+      <div class="l-inner">
+        <div class="p-top-message__contents">
+           <h2 class="p-top-message__title">温海温泉の<br><span>美しさに癒やされて</span></h2><!-- /.p-top-message__title -->
+           <ul class="p-top-message__items">
+             <li class="p-top-message__item">東北の奥座敷である温海温泉郷<br>開湯は約1300年前とされ、役小角が<br>発見したと伝えられます</li><!-- /.p-top-message__item -->
+             <li class="p-top-message__item">石井花壇は江戸より続く由緒ある旅館で<br>クラシックな作りの中に大正ロマンあふれる<br>内装を残しております</li><!-- /.p-top-message__item -->
+             <li class="p-top-message__item">圧倒的癒しの空間で<br>頑張る現代人に<br>頑張らない圧倒的な非日常をご提供します</li><!-- /.p-top-message__item -->
+           </ul><!-- /.p-top-message__items -->
+           <p class="p-top-message__name">石井花壇</p><!-- /.p-top-message__name -->
+        </div><!-- /.p-top-message__contents -->
+      </div><!-- /.l-inner -->
+    </div><!-- /.l-top-message -->
+
+
+
+   <section class="l-top-category p-top-category">
+     <div class="p-top-category__contents">
+
+       <div class="p-top-category__content">
+         <div class="p-top-category__img">
+           <img src="images/common/oheya-top.jpg" alt="">
+         </div><!-- /.p-top-category__img -->
+         <div class="p-top-category__body">
+           <h2 class="p-top-category__title">喧騒から離れた空間<br>心落ち着く至極のひととき</h2><!-- /.p-top-category__title -->
+           <div class="p-top-category__text">まるで時が止まったかのような、圧倒的な静寂のなかで、<br>
+            ひたすらにゆったりと…。<br>
+            最高級の「何もしない時間」をお過ごしください。</div><!-- /.p-top-category__text -->
+             <div class="p-top-category__btn">
+              <%- include('./parts/_c-btn', {
+                link: ' oheya/oheya.html ',
+                text: ' お部屋について '
+                } ) %>
+             </div><!-- /.p-top-category__btn -->
+         </div><!-- /.p-top-category__body -->
+       </div><!-- /.p-top-category__content -->
+       
+       <div class="p-top-category__content">
+         <div class="p-top-category__img">
+           <img src="images/common/menu-top.jpg" alt="">
+         </div><!-- /.p-top-category__img -->
+         <div class="p-top-category__body">
+           <h2 class="p-top-category__title">出迎えるのは<br>極上の温海料理</h2><!-- /.p-top-category__title -->
+           <div class="p-top-category__text">最も旬の食材を愉しむ、最高の贅沢を<br>
+            最高級A5ランクの米沢牛と共に頂く。<br>
+            あなたの人生史に残る「極上の感動」を<br>
+            お約束します。
+          </div><!-- /.p-top-category__text -->
+             <div class="p-top-category__btn">
+              <%- include('./parts/_c-btn', {
+                link: ' ryouri/ryouri.html ',
+                text: ' 料理について '
+                } ) %>
+             </div><!-- /.p-top-category__btn -->
+         </div><!-- /.p-top-category__body -->
+       </div><!-- /.p-top-category__content -->
+
+       <div class="p-top-category__content">
+         <div class="p-top-category__img">
+           <img src="images/common/onsen-top.jpg" alt="">
+         </div><!-- /.p-top-category__img -->
+         <div class="p-top-category__body">
+           <h2 class="p-top-category__title">疲れ切った身体にやすらぎを
+            <br>温海の源泉に癒やされて</h2><!-- /.p-top-category__title -->
+           <div class="p-top-category__text">古くは弘法大師の病をも治療したと言われる熱海の泉質。<br>
+            現代人の疲弊しきった身体を修復する最高級の湯治場として<br>
+            ご活用ください。</div><!-- /.p-top-category__text -->
+             <div class="p-top-category__btn">
+              <%- include('./parts/_c-btn', {
+                link: ' onsen/onsen.html ',
+                text: ' 温泉について '
+                } ) %>
+             </div><!-- /.p-top-category__btn -->
+         </div><!-- /.p-top-category__body -->
+       </div><!-- /.p-top-category__content -->
+
+     </div><!-- /.p-top-category__contents -->
+   </section><!-- /.l-top-category p-top-category -->
+
+
+<section class="l-top-plan p-top-plan">
+  <div class="l-inner">
+    <h2 class="p-top-plan__title">
+      <%- include('./parts/_c-section-title',{title:' おすすめご宿泊プラン '}) %>
+    </h2><!-- /.p-top-plan__title -->
+
+    <div class="p-top-plan__body">
+      <div class="p-top-plan__cards">
+
+        <% 
+        var images = [
+        'images/common/recommended01.jpg',
+        'images/common/recommended02.jpg',
+        'images/common/recommended03.jpg',
+        ]; 
+        var titles =[
+        ' 朝食付きプラン、日本近海で取れたのどぐろを朝食として…',
+        '【期間限定】熱海蟹をたっぷりと愉しむプラン。',
+        '【平日限定】贅沢美味懐石プラン。海辺の四季旬彩プラン。',
+        ]; 
+        var texts =[
+        ' 最高級と称されるのどぐろ、正式には「アカムツ」と呼ばれる魚、味は独特の上品な味わいで、焼いても煮ても美味',
+        '温海で水揚げされた蟹は「温海蟹」として知られ、嗜好品として愛されてきました。この宿泊プランでは存分に',
+        '熱海近海で取れた魚を鮮度そのままに舟盛りにしてご提供。生きた味をお楽しみください。',
+        ]; 
+        %>
+        
+        <% images.forEach(function (image, index) { %>
+        <% const title = titles[index]; %>
+        <% const text = texts[index]; %>
+
+          <div class="p-top-plan__card">
+            <%- include('./parts/_p-card', {
+              image: image,
+              title: title,
+              text: text
+            } ) %>
+          </div><!-- /.p-top-plan__card -->
+    
+          <% }); %>
+
+      </div><!-- /.p-top-plan__cards -->
+    </div><!-- /.p-top-plan__body -->
+  </div><!-- /.l-inner -->
+</section><!-- /.l-top-plan p-top-plan -->
+
+
+
+<section class="p-top-news">
+  <div class="l-inner">
+    <h2 class="p-top-news__title">
+      <%- include('./parts/_c-section-title',{title:' お知らせ '}) %>
+    </h2><!-- /.p-top-plan__title -->
+<div class="p-top-plan__tab">
+  <ul id="js-tab" class="p-top-plan__tab-items ">
+    <li class="p-top-plan__tab-item  active">営業情報</li><!-- /.p-top-plan__tab-item -->
+    <li class="p-top-plan__tab-item">その他</li><!-- /.p-top-plan__tab-item -->
+  </ul><!-- /.p-top-plan__tab-items -->
+</div><!-- /.p-top-plan__tab -->
+
+    <div  class="p-top-news__body  area">
+      <ul class="p-top-news__cards show">
+
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news01.jpg ',
+            title: ' 年末最後の営業日は27日になります。',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news01.jpg ',
+            title: ' 年末最後の営業日のお知らせ。',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news01.jpg ',
+            title: ' 12.21は臨時休業とさせていただきますので、よろしくお願いします。',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news01.jpg ',
+            title: ' 年末最後の営業日のお知らせ',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news01.jpg ',
+            title: ' 和室の改装を行いますため、12.10はお休みさせていただきます。',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news01.jpg ',
+            title: ' 年末最後の営業日のお知らせ',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+      </ul><!-- /.p-top-news__cards -->
+
+      <ul class="p-top-news__cards">
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news02.jpg ',
+            title: ' 年末最後の営業日は27日になります。',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news02.jpg ',
+            title: ' 年末最後の営業日のお知らせ。',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news02.jpg ',
+            title: ' 12.21は臨時休業とさせていただきますので、よろしくお願いします。',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news02.jpg ',
+            title: ' 年末最後の営業日のお知らせ',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news02.jpg ',
+            title: ' 和室の改装を行いますため、12.10はお休みさせていただきます。',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+        <div class="p-top-news__card">
+          <%- include('./parts/_p-card-lux', {
+            image: ' images/common/news02.jpg ',
+            title: ' 年末最後の営業日のお知らせ',
+            time: '2020.12.24 '
+            } ) %>
+        </div><!-- /.p-top-news__card -->
+      </ul><!-- /.p-top-news__cards -->
+    </div><!-- /.p-top-news__body -->
+  </div><!-- /.l-inner -->
+</section><!-- /.p-top-news -->
+
+
+<section class="p-top-access">
+  <div class="l-inner">
+    <h2 class="p-top-access__title">
+      <%- include('./parts/_c-section-title',{title:' アクセス '}) %>
+    </h2><!-- /.p-top-plan__title -->
+    <div class="p-top-access__address">
+      <div class="p-top-access__img">
+        <img src="images/common/acess.jpg" alt="住所の写真">
+      </div><!-- /.p-top-address__img -->
+      <div class="p-top-access__body">
+        <p class="p-top-access__text">住所</p><!-- /.p-top-access__text -->
+        <p class="p-top-access__text">〒000-0000 <br>山形県鶴岡市xxxxxxxxxx </p><!-- /.p-top-access__text -->
+        <p class="p-top-access__text">TEL/FAX</p><!-- /.p-top-access__text -->
+        <p class="p-top-access__text">000-0000-0000/00-0000-0000</p><!-- /.p-top-access__text -->
+        <p class="p-top-access__text">営業時間</p><!-- /.p-top-access__text -->
+        <p class="p-top-access__text">14:00-23:00</p><!-- /.p-top-access__text -->
+        <p class="p-top-access__text">＊4名以上のご予約の場合は、最寄り駅の「鶴岡駅」より送迎が可能ですので、
+          ご連絡ください。</p><!-- /.p-top-access__text -->
+      </div><!-- /.p-top-access__body -->
+    </div><!-- /.p-top-address -->
+    <div class="p-top-access__map">
+    <div class="p-top-access__iframe">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18188.650804584395!2d139.59272458856591!3d38.63540286276424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1634038999316!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div><!-- /.p-top-access__iframe -->
+    </div><!-- /.p-top-access__map -->
+  </div><!-- /.l-inner -->
+</section><!-- /.p-top-access -->
+
+<%- include('./common/_footer',{param:''}) %>
+
+
 
 
   </body>

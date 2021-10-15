@@ -1,0 +1,33 @@
+.p-top-news {
+ padding: rem(60) 0
+}
+
+.p-top-news__title{
+
+}
+
+.p-top-news__body {
+margin-top: rem(48);
+}
+
+.p-top-news__cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: rem(-20);
+  
+@include mq(tab) {
+  margin-left: rem(-46);
+}
+}
+
+.p-top-news__card {
+  width: 100%;
+  margin-top: rem(20);
+
+  @include mq(tab) {
+    width: calc(50% - #{rem(46)});
+    margin-left: rem(46);
+    
+  }
+  
+}

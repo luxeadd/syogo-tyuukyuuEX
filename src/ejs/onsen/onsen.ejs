@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('../common/_head',{param:'',title:'温泉 - 石井花壇 | 温海温泉旅館【公式サイト】'}) %>
+  <body>
+    <%- include('../common/_top-header',{param:'onsen'}) %>
+    
+    <%- include('../parts/_p-modal',{param:''}) %>
+
+    <%- include('../common/_p-sub-mv',
+    {
+    image:'../images/common/onsen-header.jpg ',
+    title:' onsen '
+    }
+    ) %>
+
+
+    <div class="l-sub-breadcrumb p-sub-breadcrumbs">
+      <div class="l-inner">
+        <%- include('../parts/_c-breadcrumb', {
+          navigationList: [
+          {
+            path: ' ../index.html ',
+            label: 'トップ'
+          },
+          {
+            path: '#',
+            label: '温泉'
+          }
+          ]
+        }); %>
+      </div><!-- /.l-inner -->
+    </div><!-- /.p-sub-breadcrumbs -->
+
+    <section class="l-sub-oheya p-sub-oheya">
+      <div class="l-inner">
+　　　<p class="p-sub-oheya__message">心も身体も癒やす汐の温泉<br>湯あたりしにくく、赤ちゃんから年配の方までどなたでもゆっくりと安心して入っていただけます。<br>柔らかく優しい湯にじっくりと漬かれば、心身共にリラックスできます</p><!-- /.p-sub-oheya__message -->
+    <div class="p-sub-oheya__contents">
+      <div class="p-sub-oheya__content">
+        <div class="p-sub-oheya__img">
+          <img src="../images/common/onsen01.jpg" alt="貸し切り露天風呂「雲居の湯」画像">
+        </div><!-- /.p-sub-oheya__img -->
+        <div class="p-sub-oheya__body">
+          <h2 class="p-sub-oheya__title">貸し切り露天風呂「雲居の湯」</h2><!-- /.p-sub-oheya__title -->
+          <p class="p-sub-oheya__text">弱酸性の湯質が優しく肌を包み込むような心地よさ<br>
+            最上階の露天風呂「雲居の湯」では、湯冷めしにくい食塩泉を<br>
+            熱海の町並みを遠方に望みながら・・・</p><!-- /.p-sub-oheya__text -->
+        </div><!-- /.p-sub-oheya__body -->
+      </div><!-- /.p-sub-oheya__content -->
+
+      <div class="p-sub-oheya__content">
+        <div class="p-sub-oheya__img">
+          <img src="../images/common/onsen02.jpg" alt="美肌を促す乳白色の硫黄泉を画像">
+        </div><!-- /.p-sub-oheya__img -->
+        <div class="p-sub-oheya__body">
+          <h2 class="p-sub-oheya__title">美肌を促す乳白色の硫黄泉を</h2><!-- /.p-sub-oheya__title -->
+          <p class="p-sub-oheya__text">まじりっけなしの白いにごり湯。鳥海山から引いた酸性の強い硫酸塩泉を、<br>
+            たっぷりと掛け流しています。<br>
+            四季の移り変わりを、天然温泉の湯に浸りながら味わってください。</p><!-- /.p-sub-oheya__text -->
+        </div><!-- /.p-sub-oheya__body -->
+       </div><!-- /.p-sub-oheya__content -->
+    </div><!-- /.p-sub-oheya__contents -->
+      </div><!-- /.l-inner -->
+    </section><!-- /.l-sub-oheya p-sub-oheya -->
+
+
+<section class="l-sub-explain p-sub-explain">
+  <div class="l-inner">
+    <div class="p-sub-explain__wrapper">
+
+      <h2 class="p-sub-explain__title">温泉の効能</h2><!-- /.p-sub-explain__title -->
+      <dl class="p-sub-explain__body">
+        <div class="p-sub-explain__block">
+          <dt class="p-sub-explain__header">効能</dt>
+          <dd class="p-sub-explain__description">神経痛・慢性関節リューマチ・腰痛・冷え性・慢性婦人病・うちみなど</dd>
+        </div>
+        <div class="p-sub-explain__block">
+          <dt class="p-sub-explain__header">泉質</dt>
+          <dd class="p-sub-explain__description">ナトリウム・カルシウム-塩化物泉</dd>
+        </div>
+        <div class="p-sub-explain__block">
+          <dt class="p-sub-explain__header">飲用効果</dt>
+          <dd class="p-sub-explain__description">弱塩化物泉は肌にやわらかなため、高齢者や病後の回復期によく、飲用すれば慢性便秘や慢性消化
+            器病に効果があります。</dd>       
+          </div>
+        </dl>
+        
+      </div><!-- /.p-sub-explain__wrapper -->
+  </div><!-- /.l-inner -->
+    </section><!-- /.p-sub-onsen -->
+
+
+<%- include('../common/_footer',{param:''}) %>
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,70 @@
+.p-top-plan {
+ background: url(../images/common/bg02.jpg) no-repeat center center / cover;
+ padding: rem(30) 0 rem(30);
+
+ @include mq(tab) {
+   padding: rem(64) 0 rem(111);
+   
+ }
+}
+
+.p-top-plan__title {
+
+}
+.p-top-plan__tab  {
+  margin-top: rem(34);
+}
+
+.p-top-plan__tab-items {
+  margin-left: rem(-71);
+  display: flex;
+   justify-content: center;
+    
+  
+}
+
+.p-top-plan__tab-item {
+margin-left: rem(50);
+font-size: rem(16);
+cursor: pointer;
+line-height: 1;
+}
+
+.p-top-plan__tab-item.active {
+  border-bottom: 1px solid $text-color;
+}
+
+.p-top-plan__body{
+margin-top: rem(51);
+
+@include mq(tab) {
+  margin-top: rem(51);
+  
+}
+}
+
+.p-top-plan__cards{
+  
+  @include mq(tab) {
+    display: flex;
+    margin-left: rem(-94);
+    
+  }
+}
+
+.p-top-plan__card {
+  
+  @include mq(tab) {
+    width: calc(33.3% - #{rem(188)} / 3);
+    margin-left: rem(94);
+    
+  }
+}
+
+.area ul {
+  display: none;
+}
+.area ul.show {
+  display: flex;
+}
+

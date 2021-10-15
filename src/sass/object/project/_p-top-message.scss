@@ -1,0 +1,77 @@
+.p-top-message{
+  background: url(../images/common/top-messaage.jpg) no-repeat center center / cover;
+
+}
+.p-top-message__contents {
+ padding: rem(30) 0 rem(40);
+ display: flex;
+ flex-direction: column;
+ -ms-writing-mode: tb-rl;
+ writing-mode: vertical-rl;
+ text-orientation: upright;
+ width: 100%;
+ justify-content: flex-start;
+ 
+ @include mq(tab) {
+  padding: rem(64) rem(110) rem(88) 0;
+  
+}
+
+}
+
+.p-top-message__title{
+ font-size: rem(18);
+ letter-spacing: 0.5em;
+ 
+ @include mq(tab) {
+   font-size: rem(28);
+   line-height: 2;
+   
+ }
+}
+
+.p-top-message__title span {
+  display: inline-block;
+  margin-top: rem(50);
+  
+  @include mq(tab) {
+    margin-top: rem(85);
+    
+  }
+}
+
+.p-top-message__items{
+ margin-top: rem(50);
+ 
+ @include mq(tab) {
+   margin-top: rem(85);
+   
+ }
+}
+
+.p-top-message__item {
+ margin-right: rem(20);
+ font-size: rem(12);
+ letter-spacing: 0.38em;
+ line-height: 1.5;
+ 
+ @include mq(tab) {
+   line-height: 2.45;
+   margin-right: rem(93);
+   font-size: rem(16);
+   
+ }
+}
+
+.p-top-message__name{
+font-size: rem(16);
+margin-top: rem(378);
+margin-right: rem(20);
+letter-spacing: 0.475em;
+
+@include mq(tab) {
+  font-size: rem(22);
+  margin-right: rem(95);
+  
+}
+}

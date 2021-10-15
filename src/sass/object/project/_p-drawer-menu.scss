@@ -8,10 +8,11 @@
   right: 0;
   bottom: 0;
   overflow-y: scroll;
-  background-color: #000;
+  background-color: rgba($color: $btn-color, $alpha: 0.5);
   color: #fff;
   transform: translateX(520px);
   transition: 0.3s;
+  padding: rem(100) 0;
 }
 
 .is-drawerActive {
@@ -23,7 +24,6 @@
 }
 
 .p-drawer-menu__items {
-
 }
 
 .p-drawer-menu__item {
@@ -35,5 +35,9 @@
   display: inline-block;
   width: 100%;
   height: 100%;
+  font-size: rem(24);
+  text-align: center;
+  padding: rem(30) 0;
+  
 
 }

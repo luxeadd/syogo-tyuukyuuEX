@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-between;
   padding: rem(5) rem(10);
+  font-size: rem(16);
+  font-weight: 800;
   
   align-items: center;
   @include mq(tab) {

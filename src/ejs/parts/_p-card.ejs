@@ -1,13 +1,15 @@
 <article class="p-card">
-  <div class="p-card__header">
-    <figure class="p-card__figure">
-      <img src="<%= image %>" alt="" >
-    </figure>
-  </div>
-  <div class="p-card__body">
-    <h2 class="p-card__title"><%= title %></h2>
-    <p class="p-card__copy">
-      <%= text %>
-    </p>
-  </div>
+  <a href="">
+    <div class="p-card__header">
+      <figure class="p-card__figure">
+        <img src="<%= image %>" alt="" >
+      </figure>
+    </div>
+    <div class="p-card__body">
+      <h3 class="p-card__title"><%= title %></h3>
+      <p class="p-card__copy">
+        <%- text %>
+      </p>
+    </div>
+  </a>
 </article>

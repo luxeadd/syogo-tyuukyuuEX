@@ -1,0 +1,29 @@
+.p-top-mv {
+  position: relative;
+}
+
+.p-top-mv__img {
+  width: 100%;
+  height: 100vh;
+
+}
+
+.p-top-mv__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.p-top-mv_title {
+  -ms-writing-mode: tb-rl;
+writing-mode: vertical-rl;
+position: absolute;
+top: 47%;
+right: 25.5%;
+transform: translateY(-50%);
+color: #fff;
+font-size: rem(34);
+font-weight: 800;
+line-height: 2.4;
+letter-spacing: 0.25em;
+}

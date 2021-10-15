@@ -10,13 +10,18 @@
         </ul><!-- /.p-footer__menu-lists -->
       </div><!-- /.p-footer__menu -->
       <div class="p-footer__logo">
+        <% if (param === 'top') { %>
         <img src="images/common/footer-logo.svg" alt="">
+        <% } else { %>
+        <img src="../images/common/footer-logo.svg" alt="">
+        <% } %>
       </div><!-- /.p-footer__logo --> 
+
       <div class="p-footer__wrapper">
 
         <div class="p-footer__body">
           <p class="p-footer__text">〒000-0000</p><!-- /.p-footer__text -->
-          <p class="p-footer__text">山形県鶴岡市xxxxxxxxxxx</p><!-- /.p-footer__text -->
+          <p class="p-footer__text"><span>山形県鶴岡市</span>xxxxxxxxxxx</p><!-- /.p-footer__text -->
         </div><!-- /.p-footer__body -->
         <div class="p-footer__body">
           <p class="p-footer__text">TEL.000-0000-0000</p><!-- /.p-footer__text -->
@@ -25,7 +30,7 @@
       </div><!-- /.p-footer__wrapper --> 
       </div><!-- /.p-footer__top -->
     </div><!-- /.l-inner -->
-    
+
     <div class="p-footer__bottom">
       <div class="p-footer__copy">Copyright  &copy; 石井花壇 All Rights Reserved.</div><!-- /.p-footer__copy -->
     </div><!-- /.p-footer__bottom -->

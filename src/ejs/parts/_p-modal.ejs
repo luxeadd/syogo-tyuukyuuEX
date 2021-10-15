@@ -31,8 +31,8 @@
            <select class="p-modal-select__text">
               <option>プランを選択して下さい。</option>
               <option >①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
-              <option>②平日に優雅に楽しむ、特別宿泊プラン</option>
-              <option>③絶景貸切露天と個室会席を満喫できるファミリープラン</option>
+              <option>②　平日に優雅に楽しむ、特別宿泊プラン</option>
+              <option>③　絶景貸切露天と個室会席を満喫できるファミリープラン</option>
             </select>   
           </div><!-- /.p-modal_item -->
         </div><!-- /.p-modal_content -->
@@ -54,7 +54,11 @@
       </div><!-- /.p-modal__contents -->
 
       <div id="js-modal-close" class="p-modal__close">
+        <% if (param === 'top') { %>
         <img src="images/common/close.jpg" alt="">
+        <% } else { %>
+        <img src="../images/common/close.jpg" alt="">
+        <% } %>
       </div><!-- /.p-modal__close -->
       
     </form><!-- /.p-modal__form -->

@@ -1,0 +1,104 @@
+.p-sub-oheya {
+
+}
+.p-sub-oheya::before {
+
+}
+
+.p-sub-oheya__message {
+ font-size: rem(16);
+ line-height: 2;
+ text-align: center;
+}
+
+.p-sub-oheya__contents {
+margin-top: rem(127);
+}
+
+.p-sub-oheya__content {
+width: 100%;
+position: relative;
+@include mq(tab) {
+  display: flex;
+  align-items: flex-start;
+}
+}
+
+.p-sub-oheya__content::before {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../images/common/top-messaage.jpg) no-repeat center center / cover;
+  z-index: -1;
+  }
+
+  .p-sub-oheya__content + .p-sub-oheya__content {
+    margin-top: rem(140);
+
+  }
+  
+  .p-sub-oheya__content:nth-child(even) {
+    flex-direction: row-reverse;
+    &::before {
+      right: initial;
+      left: 0;
+    }
+    .p-sub-oheya__body {
+      padding: rem(53) rem(0) rem(0) rem(60) ;
+      margin-right: rem(116);
+
+      
+    }
+  }
+
+.p-sub-oheya__img {
+  width: 100%;
+  position: relative;
+  max-width: rem(525);
+  transform: translateY(-54px);
+  
+  }
+  
+  .p-sub-oheya__img::before {
+    padding-top: 300 / 525 * 100%; //画像縦 / 横
+    display: block;
+    content: "";
+  
+  }
+  
+  .p-sub-oheya__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+  }
+
+.p-sub-oheya__body {
+padding: rem(53) rem(64) rem(0) rem(79) ;
+min-height: rem(381);
+}
+
+.p-sub-oheya__title {
+font-size: rem(24);
+}
+
+.p-sub-oheya__text{
+margin-top: rem(37);
+font-size: rem(16);
+line-height: 2;
+}
+
+.p-sub-oheya__point {
+  margin-top: rem(39);
+  margin-left: rem(7);
+  font-size: rem(14);
+line-height: 1.5;
+}

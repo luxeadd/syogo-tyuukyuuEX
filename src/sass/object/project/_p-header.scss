@@ -1,7 +1,9 @@
 .p-header {
   height: rem(40);
   background: transparent;
-  
+  transition: all .3s;
+
+
   @include mq(tab) {
    height: rem(80);
    
@@ -31,7 +33,7 @@
    height: inherit;
    display: flex;
    align-items: center;
- 
+   
  
    @include mq(tab) {
      width: rem(200);
@@ -39,6 +41,15 @@
    }
 
  }
+
+ .p-header__logo-svg {
+  transition: all .3s;
+ }
+
+ .p-header__logo-svg.change-color {
+   filter: brightness(0.3);
+ }
+
  
  .p-header__logo img {
    display: flex;
@@ -87,11 +98,12 @@
 }
  
  .p-header__pc-menu {
-   margin-left: rem(120);
+   margin-left: rem(105);
    height: inherit;
  }
 
  .p-header__btn {
    display: inline-block;
   margin-left: auto;
+  cursor: pointer;
  }

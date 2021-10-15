@@ -1,0 +1,46 @@
+.p-card-lux a {
+display: inline-block;
+ background: #F6F6F6;
+ padding: rem(15) rem(10);
+ display: flex;
+ 
+}
+
+.p-card-lux a:hover {
+  .p-card-lux__figure img {
+    transform: scale(1.3);
+  }
+}
+
+.p-card-lux__header {
+
+}
+
+.p-card-lux__figure {
+  width: rem(103);
+  height: rem(100);
+ overflow: hidden;
+  
+  }
+
+.p-card-lux__figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+   transition: all .3s;
+  
+  }
+  
+
+.p-card-lux__body {
+ margin-left: rem(30);
+}
+
+.p-card-lux__time {
+  display: inline-block;
+  font-size: rem(14);
+}
+
+.p-card-lux__title{
+font-size: rem(16);
+}

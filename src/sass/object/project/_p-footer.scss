@@ -3,7 +3,7 @@
 }
 
 .p-footer__top {
-  padding-top: rem(64);
+  padding-top: rem(58);
   padding-bottom: rem(59);
   text-align: center;
 
@@ -23,11 +23,11 @@
   display: flex;
   width: 100%;
   left: 100%;
-  padding: 0 rem(17);
+  padding: 0 rem(13);
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
   font-size: rem(18);
-  letter-spacing: 1.778em;
+  letter-spacing: 0.79em;
 }
 
 .p-footer__logo  {
@@ -52,11 +52,15 @@ justify-content: center;
 }
 
 .p-footer__body + .p-footer__body {
-  margin-top: rem(23);
+  margin-top: rem(13);
 }
 
 .p-footer__text {
  font-size: rem(16);
+}
+
+.p-footer__text span {
+  letter-spacing: 0.180em;
 
 }
 

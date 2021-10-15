@@ -39,11 +39,41 @@ drawerMenuItem.addEventListener('click', () => {
 jQuery(window).on('scroll', function () {
   var MV =  jQuery(".js-mv").innerHeight(); //headerの高さ取得 
   if (  1 <  jQuery(this).scrollTop()) { 
-  jQuery('.js-header').addClass('change-color'); }
-  else {
-  jQuery('.js-header').removeClass('change-color'); } 
+  jQuery('#js-p-header-menu1').addClass('change-color'); 
+  jQuery('#js-p-header-menu2').addClass('change-color'); 
+  jQuery('#js-p-header-menu3').addClass('change-color'); 
+  jQuery('#js-p-header-logo').addClass('change-color'); 
+   jQuery('.js-header').addClass('change-color'); 
+  }else {
+  jQuery('.js-header').removeClass('change-color'); 
+  jQuery('#js-p-header-menu1').removeClass('change-color'); 
+  jQuery('#js-p-header-menu2').removeClass('change-color'); 
+  jQuery('#js-p-header-menu3').removeClass('change-color'); 
+  jQuery('#js-p-header-logo').removeClass('change-color'); 
+    } 
   });
 
+
+
+
+   
+    // ①タブをクリックしたら発動
+    $('#js-tab li').click(function() {
+   
+      // ②クリックされたタブの順番を変数に格納
+      var index = $('#js-tab li').index(this);
+   
+      // ③クリック済みタブのデザインを設定したcssのクラスを一旦削除
+      $('#js-tab li').removeClass('active');
+   
+      // ④クリックされたタブにクリック済みデザインを適用する
+      $(this).addClass('active');
+   
+      // ⑤コンテンツを一旦非表示にし、クリックされた順番のコンテンツのみを表示
+      $('.area ul').removeClass('show').eq(index).addClass('show');
+   
+    });
+  
 
 
 
