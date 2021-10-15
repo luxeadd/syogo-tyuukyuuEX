@@ -110,26 +110,26 @@
         'images/common/recommended03.jpg',
         ]; 
         var titles =[
-        ' 朝食付きプラン、日本近海で取れたのどぐろを朝食として…',
-        '【期間限定】熱海蟹をたっぷりと愉しむプラン。',
-        '【平日限定】贅沢美味懐石プラン。海辺の四季旬彩プラン。',
+        'タイトル1',
+        'タイトル2',
+        'タイトル3',
         ]; 
         var texts =[
-        ' 最高級と称されるのどぐろ、正式には「アカムツ」と呼ばれる魚、味は独特の上品な味わいで、焼いても煮ても美味',
-        '温海で水揚げされた蟹は「温海蟹」として知られ、嗜好品として愛されてきました。この宿泊プランでは存分に',
-        '熱海近海で取れた魚を鮮度そのままに舟盛りにしてご提供。生きた味をお楽しみください。',
+        'テキスト1テキスト1テキスト1テキスト1テキスト1テキスト1テキスト1テキスト1',
+        'テキスト2テキスト2テキスト2テキスト2テキスト2テキスト2テキスト2テキスト2',
+        'テキスト3テキスト3テキスト3テキスト3テキスト3テキスト3テキスト3テキスト3',
         ]; 
         %>
         
-        <% images.forEach(function (image, index) { %>
-        <% const title = titles[index]; %>
-        <% const text = texts[index]; %>
-
+        <% images.forEach(function (image1, index) { %>
+        <% const title1 = titles[index]; %>
+        <% const text1 = texts[index]; %>
+  
           <div class="p-top-plan__card">
             <%- include('./parts/_p-card', {
-              image: image,
-              title: title,
-              text: text
+              image: image1,
+              title: title1,
+              text: text1
             } ) %>
           </div><!-- /.p-top-plan__card -->
     
